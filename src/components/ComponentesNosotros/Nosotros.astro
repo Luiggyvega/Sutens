@@ -1,0 +1,62 @@
+---
+import Historia from "./Historia.astro";
+import MisionVision from "./MisionVision.astro";
+import Logros from "./Logros.astro";
+import EquipoDirectivo from "./EquipoDirectivo.astro";
+import Galeria from "./Galeria.astro";
+---
+
+<!-- Hero Section -->
+<section
+    class="relative py-24"
+>
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Sobre SUTENS</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+            Más de 10 años defendiendo los derechos de los trabajadores y
+            construyendo un futuro mejor para todos.
+        </p>
+    </div>
+</section>
+
+<section class="py-16 px-4">
+    <Historia />
+</section>
+
+<!-- Sección Misión, Visión y Valores -->
+<section class="py-16 bg-secondary px-4">
+    <MisionVision />
+</section>
+
+<section class="py-16 px-4">
+    <Logros />
+</section>
+
+<section class="py-16 bg-secondary px-4">
+    <EquipoDirectivo />
+</section>
+
+<!-- Sección Galería -->
+<section class="py-16 px-4">
+    <Galeria />
+</section>
+
+<section class="py-16 bg-gradient-to-r from-primary to-blue-800 text-white">
+    <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold mb-6">
+            ¿Quieres conocer más sobre SUTENS?
+        </h2>
+        <p class="text-xl mb-8">
+            Contáctanos para obtener más información sobre nuestra labor y cómo
+            podemos ayudarte.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+                href="/Afiliate"
+                class="bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+            >
+                AFILIATE
+            </a>
+        </div>
+    </div>
+</section>

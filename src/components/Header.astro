@@ -1,0 +1,54 @@
+---
+import Hamburger from '../../public/Icons/Hamburger.astro'
+---
+
+<header>
+<header class="fixed top-0 w-full bg-white/40 backdrop-blur-md shadow-sm z-50 ">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4 text-gray-800 font-medium">
+    
+    <a href="/" class="flex items-center">
+        <img src="https://scontent.fvup1-1.fna.fbcdn.net/v/t39.30808-6/361244958_589761239982121_412916020982252383_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEqhb822jRKaNp7iR4lXp1lzF9eP2KhQ4LMX14_YqFDgg5nkQ13ekieUR1MaFKXDhs0jq8EM8hlO-UO7z4U-yZM&_nc_ohc=Dpsa9mk0mpkQ7kNvwHSjBNw&_nc_oc=AdmH_07axFuHgTz_JZMHhEvge9snpzhKUGMDlGqRPGn2Cdezo_hVOHN9YIh7XUB1L0Y&_nc_zt=23&_nc_ht=scontent.fvup1-1.fna&_nc_gid=XJN8U3tcg3GA9P8rnn85bA&oh=00_AfZI4dSNAykD6nDcyHv3-hYbmd_4mta2nd7JZbmzU0ehbQ&oe=68E09592" alt="SUTENES Logo" class="h-8">
+        <span class="text-xl font-semibold tracking-wide text-emerald-700">SUTENS</span>
+    </a>
+
+    <nav class="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
+        <a href="/" class="text-gray-700 hover:text-emerald-600 transition-colors duration-300 font-medium">INICIO</a>
+        <a href="/Secretarias" class="text-gray-700 hover:text-emerald-600 transition-colors duration-300 font-medium">SECRETARIAS</a>
+        <a href="/Nosotros" class="text-gray-700 hover:text-emerald-600 transition-colors duration-300 font-medium">NOSOTROS</a>
+        <a href="/Comunicaciones" class="text-gray-700 hover:text-emerald-600 transition-colors duration-300 font-medium">COMUNICACIONES</a>
+    </nav>
+
+    <div class="flex items-center space-x-4">
+        <div class="hidden md:flex items-center">
+            <a href="/Afiliate" class="bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
+                AFILIATE
+            </a>
+        </div>
+        
+        <button id="menu-btn" class="md:hidden flex flex-col space-y-1 focus:outline-none">
+            <Hamburger></Hamburger>
+        </button>
+    </div>
+</div>
+
+  <!-- Menú Móvil -->
+  <div id="menu" class="font-medium bg-white/80 flex pt-2 fixed h-[50] w-full text-center items-center backdrop-blur-md shadow-md transform translate-x-full transition-transform duration-300 ease-in-out flex-col">
+    <a href="/" class="py-4 text-gray-800 hover:text-blue-600 transition">Inicio</a>
+    <a href="/Secretarias" class="py-4 text-gray-800 hover:text-blue-600 transition">Secretarias</a>
+    <a href="/Nosotros" class="py-4 text-gray-800 hover:text-blue-600 transition">Nosotros</a>
+    <a href="/Comunicaciones" class="py-4 text-gray-800 hover:text-blue-600 transition">Comunicaciones</a>
+    <a href="/Afiliate" class="py-4 text-gray-800 hover:text-blue-600 transition">Afiliate</a>
+</div>
+</header>
+
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("translate-x-0");
+    menu.classList.toggle("translate-x-full");
+  });
+</script>
+
+</header>

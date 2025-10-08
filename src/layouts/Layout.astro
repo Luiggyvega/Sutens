@@ -1,5 +1,8 @@
 ---
 import "../styles/global.css";
+import Footer from '../components/Fotter.astro'
+import Header from '../components/Header.astro';
+
 ---
 
 <!doctype html>
@@ -12,7 +15,9 @@ import "../styles/global.css";
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<Header></Header>
 		<slot />
+		<Footer></Footer>
 	</body>
 </html>
 

@@ -1,0 +1,58 @@
+---
+import Face from "../../public/Icons/Face.astro";
+import Tiwts from "../../public/Icons/Tiwts.astro"
+import Insta from "../../public/Icons/Insta.astro"
+import Whas from "../../public/Icons/Whas.astro"
+---
+
+<footer class="py-10 px-4 bg-[#212121] text-[#f2f2f2] flex items-center justify-center">
+    <div class="w-full max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
+            <div >
+                <h3 class="text-lg font-semibold mb-4 pb-2 border-b border-[#a8c6ff]">Seguridad & Marca</h3>
+                <ul class="space-y-2">
+                <li><a href="#" class="text-gray-300 hover:text-white">Reportar Infracción de Copyright</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Reportar Problema de Seguridad</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Aviso de Marca Registrada</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Sitio Web</a></li>
+                </ul>
+            </div>
+
+            <div >
+                <h3 class="text-lg font-semibold mb-4 pb-2 border-b border-[#a8c6ff]">Mantente en Contacto</h3>
+                <ul class="space-y-2">
+                <li><a href="#" class="text-gray-300 hover:text-white">Contactar SUTENS</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Mapas & Direcciones</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Empleos</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-lg font-semibold mb-4 pb-2 border-b border-emerald-600 text-emerald-500">Síguenos</h3>
+                <p class="text-gray-400 mb-4">Conecta con nosotros en redes sociales</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110 hover:bg-gradient-to-tr hover:from-emerald-500 hover:to-green-400 hover:shadow-lg hover:shadow-emerald-500/30">
+                    <Face />
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110 hover:bg-gradient-to-tr hover:from-emerald-500 hover:to-green-400 hover:shadow-lg hover:shadow-emerald-500/30">
+                    <Tiwts />
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110 hover:bg-gradient-to-tr hover:from-emerald-500 hover:to-green-400 hover:shadow-lg hover:shadow-emerald-500/30">
+                    <Insta />
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110 hover:bg-gradient-to-tr hover:from-emerald-500 hover:to-green-400 hover:shadow-lg hover:shadow-emerald-500/30">
+                    <Whas />
+                    </a>
+                </div>
+            </div>
+    </div>
+
+    <div class="border-t border-gray-700 my-8"></div>
+        <div class="flex flex-col items-center text-center space-y-2">
+            <p class="text-xl font-bold text-white">SUTENS</p>
+            <p class="text-gray-400 text-sm">Sindicato unitario de trabajadores de la educación en Norte de Santander</p>
+            <p class="text-gray-500 text-sm">2025 SUTENS. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
