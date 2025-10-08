@@ -1,13 +1,8 @@
 {
-    "headers": [
+    "routes": [
         {
-            "source": "/(.*)\\.pdf",
-            "headers": [
-                {
-                    "key": "Content-Type",
-                    "value": "application/pdf"
-                }
-            ]
+            "src": "/Formatodeafiliacionsutens.pdf",
+            "dest": "/Formatodeafiliacionsutens.pdf"
         }
     ]
 }
