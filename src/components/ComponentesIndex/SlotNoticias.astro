@@ -126,28 +126,7 @@
                 updateSlider();
             });
             
-            // Auto-slide
-            let autoSlideInterval = setInterval(() => {
-                const slidesToShow = updateSlidesToShow();
-                const totalGroups = Math.ceil(slides.length / slidesToShow);
-                if (totalGroups > 1) {
-                    currentIndex = (currentIndex + 1) % totalGroups;
-                    updateSlider();
-                }
-            }, 5000);
             
-            // Pausar auto-slide al hover
-            slider.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-            slider.addEventListener('mouseleave', () => {
-                autoSlideInterval = setInterval(() => {
-                    const slidesToShow = updateSlidesToShow();
-                    const totalGroups = Math.ceil(slides.length / slidesToShow);
-                    if (totalGroups > 1) {
-                        currentIndex = (currentIndex + 1) % totalGroups;
-                        updateSlider();
-                    }
-                }, 5000);
-            });
             
             // Recalcular en resize
             window.addEventListener('resize', setupSlider);
